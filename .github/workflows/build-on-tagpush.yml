@@ -21,5 +21,6 @@ jobs:
       with:
         artifacts: "body.md"
         bodyFile: "body.md"
+        allowUpdates: true
         name: ${{ github.ref_name }}_${{ matrix.arch }}_${{github.sha}}
         token: ${{ secrets.GITHUB_TOKEN }}
